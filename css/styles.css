@@ -1,0 +1,541 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #F9F6F1; /* Close to the background in the image */
+  }
+  
+  /* Container for layout */
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Maximum width of the content */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Header styles */
+  .site-header {
+    background: transparent;
+    padding: 10px 0;
+  }
+  
+  /* Logo styles */
+  .logo img {
+    height: 50px; /* Adjust as per your logo's aspect ratio */
+  }
+  
+  /* Navigation styles */
+  .site-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  
+  .site-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .site-nav a:hover {
+    color: #007bff;
+  }
+
+  /* contact us button */
+  .contact-us {
+    width: 144px;
+    height: 54px;
+    border-radius: 10px;
+    background-color: #1d1a26;
+    color: #ffffff;
+    padding: 13px;
+  }
+
+
+  /* Hero section */
+
+.hero {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #f0f0f0; /* Adjust color or add a background image as needed */
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+
+  .hero h1 {
+    font-size: 48px; /* Adjust based on your design */
+    color: #000; /* Adjust color as needed */
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    color: #666; /* Adjust color as needed */
+    margin-bottom: 30px;
+  }
+
+  /* Buttons */
+.btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #333;
+  }
+  
+  .btn-primary:hover {
+    background-color: #444;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #444;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #e7f1ff;
+  }
+  
+  /* Hero image */
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2%;
+    animation: colorScaleAnimation 3s infinite alternate ease-in-out;
+  }
+
+  @keyframes colorScaleAnimation {
+    0% {
+      filter: grayscale(100%);
+      transform: scale(0.95);
+    }
+    100% {
+      filter: grayscale(0%);
+      transform: scale(1);
+    }
+  }
+
+  .hero-buttons {
+    margin-top: 20px;
+  }
+
+  .space {
+    margin-bottom: 180px;
+  }
+
+  .logo-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+}
+
+.t-logo {
+    max-width: 70%;
+    height: auto; /* maintain aspect ratio */
+    display: inline-block; /* for inline positioning */
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.image-large {
+    flex-basis: 40%;
+    /* box-sizing: border-box; */
+}
+
+.image-large img, .image-small img {
+    width: 80%;
+    border-radius: 10px;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.content {
+    flex-basis: 60%;
+    /* padding: 20px; */
+    /* box-sizing: border-box; */
+    margin-top: 50px;
+}
+
+.h1-text {
+    color: #000;
+    font-size: 40px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    display: inline-block;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+
+/* Calculator Section */
+
+.calculator-container {
+    text-align: center;
+    padding-top: 50px;
+    background-color: #141f3f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .m-12 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .m-12 h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .input-container input {
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 2px solid #0862a2;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    text-align: center;
+  }
+  
+  #calculate-btn {
+    width: 150px;
+height: 50px;
+border-radius: 10px;
+background-color: #58b1f0;
+margin-bottom: 40px;
+  }
+  
+  .result-circle {
+    background-color: #007bff; /* Replace with the actual color */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .result-circle #result {
+    color: white;
+    display: inline-block;
+  }
+
+  /* Testinomial CSS */
+
+  .testimonials-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+.testimonials-header {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+.testimonial {
+    display: inline-block;
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    position: relative;
+}
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: -25px;
+}
+.testimonial p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+.testimonial .client-name {
+    font-weight: bold;
+    margin-top: 50px;
+}
+.navigation-arrows {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+/* subscribe the news letter */
+
+.newsletter-container {
+    background-color: #007bff; /* Adjust the color to match your design */
+    padding: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .newsletter-container h2 {
+    color: white;
+    /* Add other styles such as font-size, font-weight as needed */
+  }
+  
+  .subscription-form {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .subscription-form input[type="email"] {
+    padding: 25px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .subscription-form button {
+    padding: 25px;
+    background-color: red;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .subscription-form button img {
+    width: 20px; /* Adjust as necessary */
+  }
+
+
+  .contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 80px;
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .contact-form .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  
+  .contact-form .input-row input[type="text"],
+  .contact-form .input-row input[type="email"],
+  .contact-form .input-row input[type="tel"] {
+    width: 48%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+  }
+  
+  .contact-form button {
+    padding: 0.5em 2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+  /* footer */
+
+  .footer {
+    background-color: #1a1a1a; /* Or any dark color of your choice */
+    color: white;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    line-height: 80px;
+  }
+  
+  .logo-container img {
+    max-width: 200px; /* Adjust as needed */
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav ul li a:hover {
+    color: #3498db; /* Or any highlight color of your choice */
+  }
+  
+  .footer-copy {
+    text-align: right;
+  }
+  
+  .footer-copy p {
+    margin: 0;
+    font-size: 0.8em;
+  }
+  
+  
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content,
+    .hero-image {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    .container, .container2 {
+      padding: 0 10px;
+    }
+  
+    .site-nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .site-nav ul li {
+      margin: 10px 0; /* Add space between nav items */
+    }
+    
+    .testimonials-container, .calculator-container, .newsletter-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonial, .subscription-form input[type="email"], .contact-form .input-row {
+      width: 100%;
+    }
+  
+    .contact-form .input-row input {
+      width: calc(50% - 10px);
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (max-width: 768px) {
+    .hero-content {
+      padding: 0 15px; /* Add padding to ensure content doesn't touch the edges */
+    }
+  
+    .image-large img, .image-small img {
+      width: 100%; /* Make images responsive */
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-nav ul li {
+      display: block; /* Stack footer links vertically */
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (max-width: 992px) {
+    .container, .container2 {
+      padding: 0 15px;
+    }
+  
+    .logo-container {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .t-logo {
+      margin: 10px; /* Add margin around logos for spacing */
+    }
+  }
+  
